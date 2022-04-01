@@ -2,7 +2,7 @@ import cv2
 import matplotlib.pyplot as plt
 
 # 显示不同类型的图像
-img = cv2.imread("lena.jpg",1)
+img = cv2.imread("images/lena.jpg", 1)
 img_RGB = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
 img_GRAY = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 img_HSV = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)

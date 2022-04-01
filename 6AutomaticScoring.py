@@ -5,7 +5,7 @@
 import cv2
 import numpy as np
 
-img = cv2.imread("card.png",1)
+img = cv2.imread("images/card.png", 1)
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 # 高斯模糊
 blurred = cv2.GaussianBlur(gray, (5, 5), 0)

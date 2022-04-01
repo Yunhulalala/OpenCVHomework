@@ -1,9 +1,6 @@
 # 1,请从colorball.png图像中找出蓝色球，最后画出一幅只显示蓝色球的图像。
-# 提示，通过色彩空间的转化将BGR图像转化到HSV空间后进行。通过滚动条动态
+# 通过色彩空间的转化将BGR图像转化到HSV空间后进行。通过滚动条动态
 # 选取蓝色的在hsv颜色空间的上界和下界，通过cv.inrange确定最后要选取的范围。
-#
-# 2，做一个升级版的调色板，双击鼠标切换所画图形的形状，并在右上角用文字标明下次所画的形状。
-
 
 import cv2
 
@@ -11,7 +8,7 @@ import numpy as np
 
 import matplotlib.pyplot as plt
 
-img = cv2.imread('colorball.png')
+img = cv2.imread('images/colorball.png')
 # 转化成HSV图像
 hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 # 定义颜色范围，h：100~124 S：43~255 V：46：255 为蓝色的范围

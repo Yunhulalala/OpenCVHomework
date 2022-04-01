@@ -1,4 +1,4 @@
-# @File  : kouzhao.py
+# @File  :7WearMask.py
 # @Date  :  2021/05/25
 # 7，给图片中的人物戴上口罩。
 import dlib
@@ -11,7 +11,7 @@ landmark_path = r"shape_predictor_68_face_landmarks.dat"
 predictor = dlib.shape_predictor(landmark_path)
 
 # 转变为灰度图
-img = cv2.imread("xixi.jpg")
+img = cv2.imread("images/xixi.jpg")
 img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 # """

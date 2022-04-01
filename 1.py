@@ -29,7 +29,7 @@ import cv2
 # cv2.destroyAllWindows()
 
 # ----读取本地视频----
-cap = cv2.VideoCapture('C:/Users/yunhu/Desktop/vedio.mp4')
+cap = cv2.VideoCapture('images/video.mp4')
 if not cap.isOpened():
     print("Can't open the camera")
     exit()

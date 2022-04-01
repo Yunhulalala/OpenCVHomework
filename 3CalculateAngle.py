@@ -11,7 +11,7 @@ def drawCircle(event, x, y, flag, param):
         pointList.append(point)
 
 
-img = cv2.imread("angle3.jpg", 1)
+img = cv2.imread("images/angle3.jpg", 1)
 pointList = []
 cv2.namedWindow('image')
 cv2.setMouseCallback('image', drawCircle)

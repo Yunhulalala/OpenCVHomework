@@ -12,7 +12,7 @@ def cnt_area(cnt):
     return area
 
 
-img = cv2.imread("Car_number_plate.jpg", 1)
+img = cv2.imread("images/Car_number_plate.jpg", 1)
 # 轮廓检测前图像需要经过灰度化
 img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 # 图像的模糊，高斯滤波
